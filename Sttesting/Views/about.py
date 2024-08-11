@@ -3,7 +3,11 @@ import pandas as pd
 import numpy as np
 
 st.title("Fine-tuning GenAI Project")
-st.image("./assets/image2127.jpg")
+try:
+    st.image("assets/image2127.jpg")
+except FileNotFoundError:
+    st.error("Image not found. Please check the path and file name.")
+#st.image("./assets/image2127.jpg")
 
 df = pd.DataFrame(
     ["Create a fashion moodboard for men, featuring a camouflage trench coat over a neutral-toned outfit with leather boots. Incorporate urban and woodland settings to emphasize the sophisticated and adventurous spirit of camouflage style.",
