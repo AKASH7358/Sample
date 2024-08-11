@@ -4,7 +4,8 @@ import numpy as np
 
 st.title("Fine-tuning GenAI Project")
 
-#st.image("./assets/image2127.jpg")
+st.image("./assets/image2127.png", width=230)
+#st.image("./assets/profile_image.png", width=230)
 
 df = pd.DataFrame(
     ["Create a fashion moodboard for men, featuring a camouflage trench coat over a neutral-toned outfit with leather boots. Incorporate urban and woodland settings to emphasize the sophisticated and adventurous spirit of camouflage style.",
