@@ -3,10 +3,7 @@ import pandas as pd
 import numpy as np
 
 st.title("Fine-tuning GenAI Project")
-try:
-    st.image("./assets/image2127.jpg")
-except FileNotFoundError:
-    st.error("Image not found. Please check the path and file name.")
+
 #st.image("./assets/image2127.jpg")
 
 df = pd.DataFrame(
