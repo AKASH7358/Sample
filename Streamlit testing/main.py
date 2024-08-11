@@ -1,9 +1,9 @@
 import streamlit as st
-import os
+#import os
 from streamlit_option_menu import option_menu
 
-from dotenv import load_dotenv
-load_dotenv()
+#from dotenv import load_dotenv
+#load_dotenv()
 
 import About, Account, Moodboard
 
