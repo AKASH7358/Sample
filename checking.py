@@ -1,12 +1,29 @@
-
 import streamlit as st
+import psycopg2  # or any other PostgreSQL library you use
 
-# Initialize connection.
-conn = st.connection("postgresql", type="sql")
+# Access the secrets
+db_config = st.secrets["connections.postgresql"]
 
-# Perform query.
-df = conn.query('SELECT * FROM mytable;', ttl="10m")
+# Establish the connection
+conn = psycopg2.connect(
+    dbname=db_config["database"],
+    user=db_config["username"],
+    password=db_config["password"],
+    host=db_config["host"],
+    port=db_config["port"]
+)
 
-# Print results.
-for row in df.itertuples():
-    st.write(f"{row.name} has a :{row.pet}:")
+# Create a cursor object
+cur = conn.cursor()
+
+# Perform query
+cur.execute('SELECT * FROM mytable;')
+rows = cur.fetchall()
+
+# Print results
+for row in rows:
+    st.write(f"{row[0]} has a :{row[1]}:")
+
+# Close the cursor and connection
+cur.close()
+conn.close()
