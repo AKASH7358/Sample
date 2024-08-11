@@ -2,11 +2,11 @@ import streamlit as st
 import psycopg2
 
 # Check if the key exists
-if "connections.postgresql" not in st.secrets:
+if [connections.postgresql] not in st.secrets:
     st.error("PostgreSQL secrets are missing.")
 else:
     # Access the secrets
-    db_config = st.secrets["connections.postgresql"]
+    db_config = st.secrets[connections.postgresql]
 
     # Establish the connection
     try:
