@@ -1,4 +1,2 @@
-psycopg2-binary
-sqlalchemy
-streamlit_option_menu
-
+streamlit
+streamlit-option-menu
