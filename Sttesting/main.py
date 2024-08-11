@@ -1,13 +1,13 @@
 import streamlit as st
 
 about_page = st.Page(
-    page="views/about.py",
+    page="Views/about.py",
     title="About",
     icon=":material/account_circle:",
     default=True,
 )
 moodboard_page = st.Page(
-    page = "views/moodboard.py",
+    page = "Views/moodboard.py",
     title="Moodboard",
     icon=":material/image:",
 )
