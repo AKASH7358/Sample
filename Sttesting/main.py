@@ -17,7 +17,7 @@ moodboard_page = st.Page(
  ##   icon=":material/smart_toy:",
 #)
 
-st.image("assets/image2127.png")
+
 
 pg = st.navigation(
     {
