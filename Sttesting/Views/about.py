@@ -4,7 +4,7 @@ import numpy as np
 
 st.title("Fine-tuning GenAI Project")
 
-st.image("./assets/image2127.png", width=230)
+st.image("https://img.freepik.com/free-psd/moodboard-with-home-decorations_23-2148394192.jpg?size=626&ext=jpg&ga=GA1.1.1903664533.1722931601&semt=ais_hybrid")
 #st.image("./assets/profile_image.png", width=230)
 
 df = pd.DataFrame(
